@@ -15,6 +15,7 @@ app.get("*", function (req, res) {
 });
 
 // API Routes
+
 app.get("/api/notes", function (rec, res) {
     db.json(savedNotes);
 });
@@ -24,4 +25,7 @@ app.post("/api/notes", function (req, res) {
     var newNote = req.body;
 });
 
-// 
+// Delete Notes
+
+// receive a query parameter containing the id of a note to delete?????????????????
+app.delete("/api/notes/:id", function(req, res) {}
