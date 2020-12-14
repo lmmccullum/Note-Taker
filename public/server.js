@@ -4,11 +4,24 @@ var express = require("express");
 	
 var PORT = process.env.PORT || 3080;
 
+// HTML Routes
+
 app.get("/notes", function (req, res) {
-    res.sendFile(path.join("../public/notes.html"));
+    res.sendFile(path.join(__dirname,"../public/notes.html"));
 });
 
 app.get("*", function (req, res) {
-    res.sendFile(path.join("../public/index.html"));
+    res.sendFile(path.join(__dirname,"../public/index.html"));
 });
 
+// API Routes
+app.get("/api/notes", function (rec, res) {
+    db.json(savedNotes);
+});
+
+//  return the new note to the client??????????????????
+app.post("/api/notes", function (req, res) {
+    var newNote = req.body;
+});
+
+// 
