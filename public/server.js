@@ -51,4 +51,12 @@ app.delete("/api/notes/:id", function(req, res) {
    savedNote.splice(deleteNote, 1);
 });
 
+// New Data
 
+fs.writeFile("./db/db.json", JSON.stringify(savedNote),(err) => {
+    if (err) {
+        res.sendStatus(404);
+    } else {
+        res.sendStatus(200);
+    }
+});
