@@ -1,7 +1,8 @@
 var path = require("path");
 
-module.exports = function (app) {
+const htmlRoutes = function (app) {
   app.get("/notes", function (req, res) {
+    console.log('we hit the notes path.')
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });
 
@@ -9,3 +10,4 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 };
+module.exports = htmlRoutes
