@@ -7,7 +7,7 @@
   3. [Installation](#Installation)
   4. [Instructions For Use](#InstructionsForUse)
   5. [License](#License)
-  6. [Walkthrough Video/Screenshot](#WalkthroughVideo/Screenshot)
+  6. [Screenshot](#Screenshot)
   7. [Questions](#Questions)
 
 # DESCRIPTION
@@ -29,10 +29,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# WALKTHROUGH VIDEO/SCREENSHOT
+# SCREENSHOT
 • The included image demonstrates the application functionality:
 
-[![Demonstrative Video]( PASTE URL HERE     )]
+[![Demonstrative Video](https://i.imgur.com/UCJ8DPw.png)]
 
 # QUESTIONS
 • If you have any questions, concerns or suggestions please feel free to contact me with the link below.
